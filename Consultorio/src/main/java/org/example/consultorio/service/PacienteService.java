@@ -5,6 +5,24 @@ import org.example.consultorio.repository.PacienteRepository;
 
 import java.util.List;
 
+/**
+ * Servicio de logica de negocio para el manejo de pacientes.
+ *
+ * <p>Esta clase contiene todas las reglas y operaciones del sistema:
+ * CURD completo, validaciones, deteccion de duplicados y contadores.</p>
+ *
+ * <p>Se ubica en la capa de SERVICIO de la arquitectura en 3 capas:
+ * <ul>
+ *     <li>El controller le pide operaciones al Service.</li>
+ *     <li>El service valida y aplica las reglas del negocio.</li>
+ *     <li>El Service le pide al Repository que persista los cambios.</li>
+ * </ul>
+ * </p>
+ *
+ * <p>Los datos se mantienen en memoria (lista) mientras la aplicacion
+ * esta corriendo, y se sincronizan con el archivo en cada operacion
+ * que modifica datos.</p>
+ */
 public class PacienteService {
 
     private final PacienteRepository repository;
