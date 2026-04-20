@@ -141,7 +141,7 @@ public class HelloController {
         // setAll() notifica automáticamente a la tabla que hay cambios
         tablePacientes.getItems().setAll(service.obtenerTodos());
         lblActivos.setText("Activos: " + service.contarActivos());
-        lblInactivos.setText("Inactivos: " + service.controlarInactivos());
+        lblInactivos.setText("Inactivos: " + service.contarInactivos());
     }
 
     /**
