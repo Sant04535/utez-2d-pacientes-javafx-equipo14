@@ -29,16 +29,27 @@
 
                 <Label text="Alergias:" GridPane.columnIndex="0" GridPane.rowIndex="4" />
                 <TextField fx:id="txtAlergias" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <columnConstraints>
+               <ColumnConstraints />
+               <ColumnConstraints />
+            </columnConstraints>
+            <rowConstraints>
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+            </rowConstraints>
             </GridPane>
 
             <Separator />
-            <Button onAction="#onBtnGuardarClick" mnemonicParsing="false" prefWidth="150" text="Guardar Nuevo" />
-            <Button onAction="#onBtnActualizarClick" mnemonicParsing="false" prefWidth="150" text="Actualizar Datos" />
-            <Button onAction="#limpiarCampos" mnemonicParsing="false" prefWidth="150" text="Limpiar Campos" />
+            <Button mnemonicParsing="false" onAction="#onBtnGuardarClick" prefWidth="150" text="Guardar Nuevo" />
+            <Button mnemonicParsing="false" onAction="#onBtnActualizarClick" prefWidth="150" text="Actualizar Datos" />
+            <Button mnemonicParsing="false" onAction="#limpiarCampos" prefWidth="150" text="Limpiar Campos" />
 
             <HBox spacing="5">
-                <Button onAction="#onBtnEstatusClick" mnemonicParsing="false" text="Cambiar Estatus" />
-                <Button onAction="#onBtnEliminarClick" mnemonicParsing="false" text="Eliminar" />
+                <Button mnemonicParsing="false" onAction="#onBtnEstatusClick" text="Cambiar Estatus" />
+                <Button mnemonicParsing="false" onAction="#onBtnEliminarClick" text="Eliminar" />
             </HBox>
         </VBox>
 
